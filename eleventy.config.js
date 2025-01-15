@@ -6,5 +6,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(pugPlugin)
   eleventyConfig.setInputDirectory("src/pages")
   eleventyConfig.setIncludesDirectory("../includes")
+  eleventyConfig.setDataDirectory("../data")
+  eleventyConfig.addPassthroughCopy({ "src/assets": "/" })
   eleventyConfig.setOutputDirectory("dist")
 }

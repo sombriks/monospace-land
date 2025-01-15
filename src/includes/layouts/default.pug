@@ -1,7 +1,9 @@
 doctype html 
 html 
   head 
-    title aaa
+    title #{title}
+    link(rel="stylesheet", href="reset.css")
+    link(rel="stylesheet", href="the-monospace-web.css")
   body !{content}
     include ../components/footer.pug 
     
