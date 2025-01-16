@@ -10,7 +10,20 @@ I like monospace
 
 ## How to use
 
-This repo is configured as a template, there is a button "use this template"
+This repo is configured as a template, there is a button "use this template". If
+you don't like it, here is the manual setup:
+
+```bash
+mkdir my-site
+cd my-site
+npm init -y
+npm i -D @11ty/eleventy @11ty/eleventy-plugin-pug alpinejs js-yaml rimraf
+mkdir -p src/{pages,assets,data,includes}
+mkdir -p src/includes/{components,controls,layouts}
+```
+
+Then copy the [eleventy config file][config] and start writing pug templates and
+yal data files.
 
 ## Noteworthy
 
@@ -22,3 +35,4 @@ This repo is configured as a template, there is a button "use this template"
 [mono]: https://owickstrom.github.io/the-monospace-web
 [pug]: https://pugjs.org
 [alpinejs]: https://alpinejs.dev
+[config]: ./eleventy.config.js
