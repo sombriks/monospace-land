@@ -1,7 +1,49 @@
 ---
 layout: layouts/default.pug
-title: Hello world
+title: The Monospace Land
 ---
-h1 hello world
+h1 #{title}
 // data from yaml file!
 p= sample.simple 
+
+h2 title 2
+
+h3 title 3
+
+h4 title 4
+
+h5 title 5
+
+h6 title 6
+
+strong strong text
+
+hr
+
+i italic one
+
+br
+
+table 
+  tr 
+    th header 1
+    th header 2
+    th header 3
+  tr 
+    td cell 1
+    td cell 2
+    td cell 3
+    
+fieldset
+  legend and a fieldset with a form    
+  form
+    label name
+      input
+    label phone
+      input
+    label address
+      input
+    hr
+    input(type="submit")
+    
+    
