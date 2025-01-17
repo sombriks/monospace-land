@@ -37,13 +37,28 @@ table
 fieldset
   legend and a fieldset with a form    
   form
-    label name
-      input
-    label phone
-      input
-    label address
-      input
-    hr
+    .grid
+      label name
+        input
+      label phone
+        input
+      label(style="flex-grow:1") address
+        input
     input(type="submit")
-    
+
+p drawings in `pre` tags 
+
+pre. 
+  ┌─────────┐
+  │  ..     │
+  │   .     └────┐
+  │      *  ┌──┐ │
+  └─────────┘  │ │
+               │ │ 
+          ┌────┘ └──┐
+          │...      │
+          │ .....   │
+          │     ..  │
+          └─────────┘
+
     
