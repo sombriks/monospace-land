@@ -13,6 +13,8 @@ export default async function (eleventyConfig) {
   eleventyConfig.setDataDirectory("../data")
   eleventyConfig.addPassthroughCopy({
     "src/assets": "/",
-    "node_modules/alpinejs/dist/cdn.js": "/alpine.js"
+    "node_modules/alpinejs/dist/cdn.js": "/alpine.js",
+    "node_modules/the-monospace-web-alt/reset.css": "/reset.css",
+    "node_modules/the-monospace-web-alt/index.css": "/the-monospace-web.css",
   })
 }
