@@ -2,34 +2,6 @@
 layout: layouts/default.pug
 title: The Monospace Land
 ---
-include ../includes/components/sidebar.pug
-.grid 
-  +sidebar
-  div(style={"flex-grow":"3"})
-    h1 Welcome to monospace land!
-// data from yaml file!
-p= sample.simple 
-
-
-
-strong strong text
-
-hr
-
-i italic one
-
-br
-
-table 
-  tr 
-    th header 1
-    th header 2
-    th header 3
-  tr 
-    td cell 1
-    td cell 2
-    td cell 3
-    
 fieldset
   legend and a fieldset with a form    
   form
@@ -41,20 +13,3 @@ fieldset
       label(style="flex-grow:1") address
         input
     input(type="submit")
-
-p drawings in `pre` tags 
-
-pre. 
-  ┌─────────┐
-  │  ..     │
-  │   .     └────┐
-  │      *  ┌──┐ │
-  └─────────┘  │ │
-               │ │ 
-          ┌────┘ └──┐
-          │...      │
-          │ .....   │
-          │     ..  │
-          └─────────┘
-
-    

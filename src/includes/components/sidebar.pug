@@ -1,13 +1,14 @@
-- const base = process.env.BASE_URL || ""
-mixin sidebar 
-  div(style={"flex-shrink":"1"}) 
+mixin sidebar(base)
+  div
     a(href=`${base}/`) Start
     h2 Elements 
     a(href=`${base}/text`) Text
+    br
+    a(href=`${base}/misc`) Misc
     h2 Controls 
     a(href=`${base}`) Lists
     br
-    a(href=`${base}`) Tables 
+    a(href=`${base}/tables`) Tables 
     br
     a(href=`${base}`) Grids  
     br
@@ -15,5 +16,5 @@ mixin sidebar
     h2 Components
     a(href=`${base}`) Trees
     br
-    a(href=`${base}`) Pre
+    a(href=`${base}/pre`) Pre
     

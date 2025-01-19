@@ -1,3 +1,6 @@
+
+include ../components/footer.pug 
+include ../components/sidebar.pug
 doctype html 
 html 
   head 
@@ -9,6 +12,8 @@ html
     link(rel="stylesheet", href=`${base}/index.css`)
     script(type="text/javascript" src=`${base}/alpine.js` defer="") 
     script(type="text/javascript" src=`${base}/index.js`) 
-  body(x-data="") !{content}
-    include ../components/footer.pug 
-    
+  body(x-data="")
+    .menu-content
+      +sidebar(base)
+      div !{content}
+    +footer
