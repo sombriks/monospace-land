@@ -2,19 +2,15 @@
 layout: layouts/default.pug
 title: The Monospace Land
 ---
-h1 #{title}
+include ../includes/components/sidebar.pug
+.grid 
+  +sidebar
+  div(style={"flex-grow":"3"})
+    h1 Welcome to monospace land!
 // data from yaml file!
 p= sample.simple 
 
-h2 title 2
 
-h3 title 3
-
-h4 title 4
-
-h5 title 5
-
-h6 title 6
 
 strong strong text
 

@@ -6,6 +6,7 @@ html
     - const base = process.env.BASE_URL || ""
     link(rel="stylesheet", href=`${base}/reset.css`)
     link(rel="stylesheet", href=`${base}/the-monospace-web.css`)
+    link(rel="stylesheet", href=`${base}/index.css`)
     script(type="text/javascript" src=`${base}/alpine.js` defer="") 
     script(type="text/javascript" src=`${base}/index.js`) 
   body(x-data="") !{content}
